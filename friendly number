@@ -1,0 +1,26 @@
+#include <stdio.h>
+
+int main()
+{
+    int num,sum=0,i,num2,sum2=0,j;
+    scanf("%d",&num);
+    scanf("%d",&num2);
+    for(i=1;i<num;i++)
+    {
+        if(num%i==0)
+        sum=sum+i;
+        
+    }
+    
+    for(j=1;j<num2;j++)
+    {
+        if(num2%j==0)
+        sum2=sum2+j;
+
+    }
+    
+    printf("%d",sum/6);
+    printf("\n%d",sum2/28);
+    return 0;
+}
+
