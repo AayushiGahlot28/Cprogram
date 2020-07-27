@@ -1,0 +1,16 @@
+*******************************************************************************/
+// 5 is an automorphic number, 5*5 =25
+#include <stdio.h>
+
+int main()
+{
+    int num,rem,temp;
+    scanf("%d",&num);
+    temp=num*num;
+    rem=temp%10;
+
+    if(num==rem)
+    printf("yes");
+
+    return 0;
+}
