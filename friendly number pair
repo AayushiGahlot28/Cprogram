@@ -1,0 +1,34 @@
+*******************************************************************************/
+
+//FRIENDLY NUMBER
+/*For example,6 and 28 are Friendly Pair.
+
+(Sum of divisors of 6)/6 = (Sum of divisors of 28)/28*/
+//******************************************************************************
+#include <stdio.h>
+
+int main()
+{
+    int num,sum=0,i,num2,sum2=0,j;
+    scanf("%d",&num);
+    x=num;
+    scanf("%d",&num2);
+    y=num2;
+    for(i=1;i<num;i++)
+    {
+        if(num%i==0)
+        sum=sum+i;
+        
+    }
+    
+    for(j=1;j<num2;j++)
+    {
+        if(num2%j==0)
+        sum2=sum2+j;
+
+    }
+    
+    printf("%d",sum/x);
+    printf("\n%d",sum2/y);
+    return 0;
+}
