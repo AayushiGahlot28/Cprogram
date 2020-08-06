@@ -1,0 +1,34 @@
+
+// BINARY TO DECIMAL CONVERSION//
+#include <stdio.h>
+#include<math.h>
+
+int main()
+{
+     int number,i,rem,count,convert=0,num;
+     printf("enter the number");
+     scanf("%d",&number);
+     num=number;
+     while(number!=0)
+     {
+        
+         number=number/10;
+         count++;
+     }
+     
+     
+     {
+         while(num!=0&&i<count)
+         {  
+             
+            { rem=num%10;
+             convert=convert+(rem*pow(2,i));
+             num=num/10;
+                i++;
+            }
+         }
+     
+     printf("%d",convert);
+
+    return 0;
+}}
